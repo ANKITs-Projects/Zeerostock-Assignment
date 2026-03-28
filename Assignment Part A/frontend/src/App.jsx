@@ -28,7 +28,7 @@ function App() {
       const res = await fetch(url);
       const result = await res.json();
 
-      setData(result);
+      setData(result.data);
       setError("");
     } catch (error) {
       setError("Internal server error please try again");
@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       fetchData(filters);
-    }, 500);
+    }, 300);
 
     return () => clearTimeout(timer)
   }, [filters]);

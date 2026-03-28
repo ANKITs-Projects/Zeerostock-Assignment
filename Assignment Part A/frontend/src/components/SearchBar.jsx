@@ -24,10 +24,6 @@ function SearchBar({ filters, onChange }) {
     e.target.style.border = "1px solid #007bff";
     e.target.style.boxShadow = "0 0 8px rgba(0,123,255,0.3)";
   }}
-  onBlur={(e) => {
-    e.target.style.border = "1px solid #ccc";
-    e.target.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
-  }}
 />
   );
 }

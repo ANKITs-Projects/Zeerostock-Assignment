@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project implements a **search functionality for inventory items** where users can filter products based on multiple criteria such as name, category, and price range.
+This project implements a **search & filter functionality for inventory items** where users can filter products based on multiple criteria such as name, category, and price range.
 
 ### 🛠 Tech Stack
 
@@ -176,6 +176,21 @@ setTimeout(() => {
 - Managed using React state:
 ```js
 const [error, setError] = useState("");
+
+---
+
+
+## 🚀 Performance Improvement for Large Datasets
+
+### Optimization: Pagination / Lazy Loading
+
+When working with large datasets, rendering all records at once can slow down the application and affect user experience. To improve performance, implement pagination or lazy loading.
+
+### Approach
+
+- Fetch data in smaller chunks instead of loading everything at once
+- Use query parameters like `page` and `limit` in API requests
+- Load more data only when needed (button click or scroll)
 
 
 ## 🚀 Summary
