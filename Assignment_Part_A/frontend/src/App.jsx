@@ -17,7 +17,7 @@ function App() {
   
   const fetchData = async (updatedFilters) => {
     try {
-      let url = "http://localhost:5000/search?";
+      let url = "https://zeerostock-assignment-9xfv.vercel.app/search?";
 
       Object.keys(updatedFilters).forEach(key => {
         if (updatedFilters[key]) {
